@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Circus Animals</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Tillana:500" rel="stylesheet"> 
+
+        <link rel="stylesheet" type="text/css" href="css/circusAnimals.css"> 
+        
+
+        <script src="js/init.js" type="module"></script>
+    </head>
+
+    <body>
+        <h1>Circus Animals App</h1>
+
+        <!-- NOTE: In order to trigger javascript, remember to use the 'onclick' HTML attribute. -->
+        <!-- NOTE: The '#' symbol in the "href" keeps the HTML page from refreshing.  -->
+        <ul  id="nav">
+            <!-- Add button, this will add a new animal to the group -->
+            <li><a id="add" href="#">Add</a></li>
+
+            <!-- Sing button, this will iterate through the list of 
+             animals and get them to do their own special song.-->
+            <li><a id="sing" href="#">Group Sing</a></li>
+
+            <!-- Trick button, this will iterate through the list of 
+             animals and get them to do their own special trick.
+
+            NOTE: use a switch statement for executing this custom method.
+            -->
+            <li><a id="doTricks" href="#">Group Tricks</a></li>
+        </ul>
+
+        <!-- Use the document.getElementById to add html to this page like: 
+            var element = document.getElementById("log");
+            element.innerHTML += "<br/>Test"; 
+        -->
+        <div id="animalList" class="panel"><b>LIST OF ANIMALS</b></div>
+
+        <!-- keep track of what the user is doing here, 
+            like when the user clicks the 'add' button, log it 
+        -->
+        <div id="log" class="panel"><b>LOG</b></div>
+    </body>
+</html>
